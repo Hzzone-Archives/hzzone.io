@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - hzzone.io</title>
+    <link rel="icon" href="favicon.ico">
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/jquery.bxslider.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
+<!--        <link rel="stylesheet" href="~/css/font-awesome.min.css" />-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#about">Lifestyle</a></li>
+                        <li><a href="#contact">Travel</a></li>
+                        <li><a href="#contact">Fashion</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    <div class="container">
+		<header>
+			<a href="/"><img src="~/images/logo.png"></a>
+		</header>
+        @RenderBody()
+        <footer class="footer">
+
+            <div class="footer-socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-reddit"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <i class="fa fa-copyright"></i> Copyright 2018. All rights reserved.<br>
+            </div>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.bxslider.js"></script>
+        <script src="~/js/mooz.scripts.min.js"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+    </div><!-- /.container -->
+</body>
+</html>
